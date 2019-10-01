@@ -1,0 +1,317 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.layout {
+  display: block;
+  width: 1000px;
+  background: rgba(242, 247, 242, 0.8);
+  margin: 0 auto;
+  box-shadow: 8px 5px 5px steelblue;
+}
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#info li {
+  font-family: 'Helvetica';
+  font-size: 24px;
+}
+.email,
+.phone {
+  color: steelblue;
+}
+.email:hover,
+.phone:hover {
+  color: coral;
+}
+.lnksUpperPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.lnksUpperPhoto li a {
+  font-family: 'OpenSans Regular';
+  font-size: 20px;
+  color: steelblue;
+}
+.lnksUpperPhoto li:hover a {
+  padding: 4px;
+  background: coral;
+  color: #fff;
+  border-radius: 50%;
+}
+.mailMeCall {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+.mailMeCall button {
+  display: block;
+  width: 100px;
+  height: 25px;
+  border: none;
+  box-shadow: 2px 1px 2px 0 steelblue;
+  font-size: 18px;
+  font-family: 'Helvetica Regular';
+  border-radius: 5px;
+}
+.mailMeCall a:hover button {
+  background: coral;
+  color: #fff;
+  cursor: pointer;
+  transform: rotateZ(1turn);
+  transition: 0.8s linear;
+}
+.mailMeCall button:focus {
+  outline: none;
+}
+#info h1 {
+  transform: rotateX(1turn);
+  transition: 0.7s linear;
+  color: steelblue;
+}
+
+#study h2 {
+  text-align: center;
+  color: deepskyblue;
+  padding-top: 20px;
+}
+
+.studyAndCourses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.studyAndCourses h3 {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+.studyAndCourses p {
+  font-family: 'Times New Roman Regular';
+  font-size: 16px;
+}
+.two_courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ukrainian_it,
+.source_it {
+  margin-left: 100px;
+  display: block;
+  width: 170px;
+  height: 50px;
+  background: steelblue;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  box-shadow: 7px 7px 5px 0 #000;
+}
+.knahu {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: steelblue;
+  text-align: center;
+  position: relative;
+  box-shadow: 7px 7px 5px 0 #000;
+}
+
+.boxshadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  background: #c0bebe;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 7px 7px 5px 0 #000;
+}
+
+.ukrainian_it:hover .boxshadow,
+.source_it:hover .boxshadow,
+.knahu:hover .boxshadow {
+  opacity: 1;
+  transition: 0.7s linear;
+  transform: translateY(50px);
+}
+
+#study .ukrainian_it:hover,
+#study .source_it:hover {
+  margin-bottom: 120px;
+  transition: 0.7s linear;
+}
+#study .knahu:hover {
+  margin-bottom: 170px;
+  transition: 0.7s linear;
+}
+#study .knahu,
+#study .ukrainian_it,
+#study .source_it {
+  transition: 0.9s all;
+}
+#know h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-family: 'Helvetica Regular';
+  font-size: 25px;
+  color: deepskyblue;
+}
+.string1,
+.string2,
+.string3,
+.string4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+.string1 li img,
+.string2 li img,
+.string3 li img,
+.string4 li img {
+  transition: 0.5s all;
+  margin-bottom: 25px;
+}
+.string1 li:hover img,
+.string2 li:hover img,
+.string3 li:hover img,
+.string4 li:hover img {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s all;
+}
+.string4 {
+  padding-bottom: 20px;
+}
+#trial h2 {
+  text-align: center;
+  color: deepskyblue;
+}
+.allWorkPlaces {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.allWorkPlaces li p {
+  transform: translateX(-3000px);
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: bold;
+  color: steelblue;
+}
+.allWorkPlaces li:hover p {
+  transform: translateX(10px);
+  transition: 0.5s all;
+}
+#sm h2 {
+  text-align: center;
+  color: deepskyblue;
+  padding-top: 20px;
+}
+.footerTwoParts {
+  display: flex;
+  justify-content: space-around;
+}
+.footerTwoParts a {
+  font-family: 'Helvetica';
+  font-size: 17px;
+}
+.frontEnd a {
+  padding: 5px;
+  background: steelblue;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+.frontEnd a:hover {
+  background: wheat;
+  color: black;
+}
+.networks,
+.frontEnd {
+  display: flex;
+}
+.frontEnd {
+  margin-top: 10px;
+}
+.networks a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('./img/sprites.png') 0% -100%;
+  margin-right: 5px;
+}
+.networks .linkedin a {
+  background: url('./img/sprites.png') 67% -100%;
+}
+.networks .fb:hover a {
+  background-position: 0% 0;
+}
+.networks .linkedin:hover a {
+  background-position: -50% 0;
+}
+.myFirstWebsites {
+  text-align: center;
+  margin-top: 40px;
+}
+.myFirstWebsites a {
+  margin-left: 10px;
+  background: steelblue;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.myFirstWebsites a:hover {
+  background: wheat;
+  color: black;
+}
+.myFirstWebsites a:first-child {
+  margin-left: 0;
+}
+#sm {
+  position: relative;
+  padding-bottom: 20px;
+}
+.fixedBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.fixedBtn a:after {
+  content: '';
+  display: block;
+  width: 73px;
+  height: 50px;
+  background: url('./img/arrow.png') no-repeat;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+.toolTip {
+  font-family: 'Arial Regular';
+  background: wheat;
+  color: steelblue;
+  text-align: center;
+}
